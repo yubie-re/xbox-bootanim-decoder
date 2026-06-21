@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xbox-bootanim-decoder"
+version = "0.1.0"
+description = "Convert Xbox bootanim.dat UVD captures to MP4 with audio"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Xbox bootanim research contributors" }
+]
+dependencies = [
+  "ffmpeg-python>=0.2.0"
+]
+
+[project.scripts]
+xbox-bootanim-to-mp4 = "xbox_bootanim.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated media / work dirs
+*.mp4
+*.m4a
+*.mov
+*.avi
+*.mkv
+*.h264
+*.264
+*.raw
+*.wav
+*_work/
+conversion_meta.json
+*.mp4.json
+
+# Large source files - keep samples out of git by default
+*.dat
