@@ -37,7 +37,7 @@ ffmpeg -version
 For development/use from a checkout:
 
 ```bash
-git clone <your-repo-url> xbox-bootanim-decoder
+git clone https://github.com/yubie-re/xbox-bootanim-decoder.git xbox-bootanim-decoder
 cd xbox-bootanim-decoder
 python3 -m venv .venv
 . .venv/bin/activate
